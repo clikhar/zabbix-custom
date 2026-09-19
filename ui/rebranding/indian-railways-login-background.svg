@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1976b8"/>
+      <stop offset=".55" stop-color="#0a4d7d"/>
+      <stop offset="1" stop-color="#052d4e"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b507b"/>
+      <stop offset="1" stop-color="#031b30"/>
+    </linearGradient>
+    <linearGradient id="train" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f7f8fa"/>
+      <stop offset=".72" stop-color="#dfe5ea"/>
+      <stop offset="1" stop-color="#b7c1c9"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#sky)"/>
+  <circle cx="710" cy="180" r="120" fill="#9ed8ff" opacity=".18" filter="url(#soft)"/>
+  <path d="M0 720 C180 660 290 690 430 650 C610 600 760 650 900 590 L900 1200 L0 1200Z" fill="url(#ground)"/>
+  <g stroke="#b8e2ff" stroke-width="5" opacity=".45" fill="none">
+    <path d="M40 210H860"/>
+    <path d="M110 210V340M790 210V340"/>
+    <path d="M110 340H790"/>
+    <path d="M180 210L110 340M720 210L790 340"/>
+    <path d="M40 170L860 170"/>
+  </g>
+  <g stroke="#8fc9ee" stroke-width="3" opacity=".35">
+    <path d="M160 120L160 560M300 120L300 560M470 120L470 560M650 120L650 560M820 120L820 560"/>
+  </g>
+  <g fill="#e9f1f6" opacity=".55">
+    <rect x="70" y="250" width="18" height="260"/>
+    <rect x="812" y="250" width="18" height="260"/>
+  </g>
+  <g transform="translate(315 500)">
+    <rect x="0" y="170" width="520" height="250" rx="34" fill="#0a2031" opacity=".5"/>
+    <path d="M70 70H420C470 70 510 110 510 160V330H0V160C0 110 30 70 70 70Z" fill="url(#train)"/>
+    <rect x="0" y="190" width="510" height="38" fill="#e94b3c"/>
+    <rect x="0" y="228" width="510" height="18" fill="#f4f6f8"/>
+    <path d="M70 95H440L405 180H38Z" fill="#183b55"/>
+    <path d="M90 110H420L395 166H55Z" fill="#8ac5e7" opacity=".8"/>
+    <circle cx="120" cy="325" r="46" fill="#101820"/>
+    <circle cx="390" cy="325" r="46" fill="#101820"/>
+    <circle cx="120" cy="325" r="20" fill="#87939d"/>
+    <circle cx="390" cy="325" r="20" fill="#87939d"/>
+    <circle cx="255" cy="205" r="42" fill="#d8212f" opacity=".9"/>
+    <path d="M255 175c-14 16-18 27-18 39 0 10 8 18 18 18s18-8 18-18c0-12-4-23-18-39Z" fill="#fff" opacity=".95"/>
+    <text x="255" y="295" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#163b56">भारतीय रेल</text>
+  </g>
+  <g stroke="#d8e9f5" stroke-width="10" opacity=".72">
+    <path d="M270 900L40 1200"/>
+    <path d="M600 900L860 1200"/>
+  </g>
+  <g stroke="#9bb7c9" stroke-width="4" opacity=".5">
+    <path d="M320 900L190 1200M550 900L710 1200"/>
+    <path d="M220 1010H680M140 1110H760"/>
+  </g>
+  <rect x="0" y="0" width="900" height="1200" fill="#003f68" opacity=".12"/>
+</svg>
