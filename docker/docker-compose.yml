@@ -18,7 +18,7 @@ services:
       MYSQL_PASSWORD: "${ZABBIX_DB_PASSWORD}"
 
       ZBX_SERVER_HOST: host.docker.internal
-      ZBX_SERVER_NAME: "Zabbix Custom 7.4.14"
+      ZBX_SERVER_NAME: "NGP Division, Central Railway"
 
     volumes:
       - /opt/zabbix-custom/ui:/usr/share/zabbix
