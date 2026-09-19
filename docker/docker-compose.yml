@@ -1,0 +1,32 @@
+services:
+  zabbix-web:
+    image: zabbix/zabbix-web-nginx-mysql:ubuntu-7.4-latest
+    container_name: zabbix-custom-web
+    restart: unless-stopped
+
+    ports:
+      - "8091:8080"
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    environment:
+      DB_SERVER_HOST: host.docker.internal
+      DB_SERVER_PORT: "3306"
+      MYSQL_DATABASE: zabbix
+      MYSQL_USER: zabbixweb
+      MYSQL_PASSWORD: "${ZABBIX_DB_PASSWORD}"
+
+      ZBX_SERVER_HOST: host.docker.internal
+      ZBX_SERVER_NAME: "Zabbix Custom 7.4.14"
+
+    volumes:
+      - /opt/zabbix-custom/ui:/usr/share/zabbix
+      - /opt/zabbix-custom/docker/config/zabbix.conf.php:/usr/share/zabbix/conf/zabbix.conf.php:ro
+
+    networks:
+      - zabbix-custom-net
+
+networks:
+  zabbix-custom-net:
+    external: true
