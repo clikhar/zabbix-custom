@@ -127,9 +127,9 @@ $server_name = (isset($ZBX_SERVER_NAME) && $ZBX_SERVER_NAME !== '')
 .cr-login-main {
 	position: relative;
 	display: grid;
-	grid-template-columns: minmax(270px, 31%) minmax(430px, 48%) minmax(260px, 21%);
+	grid-template-columns: minmax(300px, 30%) minmax(520px, 42%) minmax(360px, 28%);
 	min-height: calc(100vh - 52px);
-	background: linear-gradient(135deg, #07517f 0%, #0b5f8f 38%, #dcecf6 38.1%, #f7fafc 62%, #0a4d78 62.1%, #062d4b 100%);
+	background: #f4f8fb;
 }
 
 .cr-login-brand {
@@ -139,10 +139,10 @@ $server_name = (isset($ZBX_SERVER_NAME) && $ZBX_SERVER_NAME !== '')
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 42px 30px;
+	padding: 42px 28px;
 	text-align: center;
 	color: #fff;
-	background: linear-gradient(180deg, rgba(2,45,77,.88), rgba(4,68,108,.93));
+	background: linear-gradient(180deg, #063b60 0%, #07547f 55%, #06446b 100%);
 }
 
 .cr-login-brand-logo {
@@ -193,18 +193,18 @@ $server_name = (isset($ZBX_SERVER_NAME) && $ZBX_SERVER_NAME !== '')
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 50px 35px;
-	background: rgba(244, 249, 252, .12);
+	padding: 40px 28px;
+	background: #eef5f9;
 }
 
 .cr-login-card {
-	width: min(520px, 100%);
+	width: min(590px, 100%);
 	margin: 0 !important;
-	padding: 38px 42px 32px !important;
-	background: rgba(255,255,255,.98) !important;
-	border: 1px solid rgba(24, 73, 105, .14) !important;
+	padding: 34px 44px 30px !important;
+	background: rgba(255,255,255,.99) !important;
+	border: 1px solid rgba(24, 73, 105, .13) !important;
 	border-radius: 18px !important;
-	box-shadow: 0 22px 65px rgba(0, 35, 60, .26);
+	box-shadow: 0 18px 55px rgba(0, 35, 60, .18);
 }
 
 .cr-login-card .signin-logo {
@@ -282,27 +282,27 @@ $server_name = (isset($ZBX_SERVER_NAME) && $ZBX_SERVER_NAME !== '')
 .cr-login-rail-scene {
 	position: relative;
 	min-height: 100%;
-	background-image:
-		linear-gradient(90deg, rgba(6,45,73,.18), rgba(6,45,73,.05)),
+	background:
+		linear-gradient(180deg, rgba(5,48,78,.04), rgba(5,48,78,.32)),
 		url("../rebranding/indian-railways-login-background.svg");
 	background-size: cover;
 	background-position: center;
-	box-shadow: inset 24px 0 45px rgba(2,35,57,.15);
+	box-shadow: inset 18px 0 35px rgba(2,35,57,.14);
 }
 
 .cr-login-rail-scene::before {
-	content: "Indian Railways\A Lifeline of the Nation";
+	content: "Indian Railways\\A Lifeline of the Nation";
 	white-space: pre;
 	position: absolute;
-	top: 8%;
-	right: 7%;
-	max-width: 260px;
-	color: rgba(255,255,255,.94);
-	font-size: clamp(20px, 2vw, 31px);
+	top: 7%;
+	right: 8%;
+	max-width: 300px;
+	color: #fff;
+	font-size: clamp(22px, 2vw, 32px);
 	font-weight: 700;
-	line-height: 1.18;
+	line-height: 1.2;
 	text-align: right;
-	text-shadow: 0 2px 10px rgba(0,0,0,.25);
+	text-shadow: 0 2px 12px rgba(0,0,0,.32);
 }
 
 .cr-login-rail-scene::after {
